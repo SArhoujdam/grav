@@ -1,0 +1,108 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+    <link rel="stylesheet" href="{% static 'css/profile.css' %}">
+
+    <title>Profile</title>
+  </head>
+  <body>
+
+    <header><nav class="navbar">
+        <p class="logo">Grabr</p>
+        
+        <div class="nav-links">
+            <a class="header-username" href="profile.html">Fonctionnalités</a> 
+            
+            <a class="header-username" href="profile.html">Comment ça marche</a>
+        </div>
+    
+        <a class="profile-icon-link-container" href="{% url 'profile' %}">
+            <img src="{{ profile.profile_photo.url }}" alt="profile-icon">
+        </a>
+        <a class="profile-icon-link-container" href="{% url 'index' %}">
+            <div class="header-logout">Logout</div>
+        </a>
+    </nav>
+        
+        
+    </header>
+    <br>
+    <div class="notification-container">
+        {% if user.is_authenticated %}
+            
+        {% else %}
+    
+        {% endif %}
+        
+        <!-- Affichage des messages -->
+        <div class="notification">
+          {% if user.is_authenticated %}
+            
+          {% else %}
+              <p>Veuillez vous connecter.</p>
+          {% endif %}
+            {% for message in messages %}
+                <p {% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</p>
+            {% endfor %}
+            <img id="cross" src="{% static 'images/close.png' %}" width="15px" height="15px" alt="Fermer">
+        </div>
+    </div>
+    
+    <script>
+        document.getElementById('cross').addEventListener('click', function() {
+            document.getElementsByClassName('notification-container')[0].style.display = 'none';
+        });
+    </script>
+
+    <main class="main-container">
+        
+        <form class="container" action="" method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            
+            <div class="profile-photo-container profile-photo-form-container">
+                <p class="profile-page-heading">Edit your profile</p>
+                <img src="{{ profile.profile_photo.url }}" alt="user-image">  <!-- Afficher l'image actuelle -->
+                <input type="file" name="profile_image" accept="image/*">
+            </div>
+        
+            <div class="user-content-container user-profile-form-container">
+                <ul>
+                    <li class="name">
+                        <label for="user-name">Your Name</label>
+                        <input type="text" name="username" id="user-name" value="{{ request.user.username }}">
+                    </li>
+                    <li class="title">
+                        <label for="user-email">Your Email</label>
+                        <input type="email" name="email" id="user-email" value="{{ request.user.email }}">
+                    </li>
+                    <li class="desc">
+                        <label for="password1">New Password</label>
+                        <input type="password" name="password1" id="password1">
+                    </li>
+                    <li class="desc">
+                        <label for="password2">Confirm Password</label>
+                        <input type="password" name="password2" id="password2">
+                    </li>
+                </ul>
+                <button class="profile-save-button" type="submit">Save</button>
+            </div>
+        </form>
+        
+        
+    </main>
+
+    <script>
+      document.getElementById('user-name').placeholder = 'Your Name';
+      document.getElementById('user-email').placeholder = 'Your Email';
+    </script>
+
+  </body>
+</html>

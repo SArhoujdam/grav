@@ -1,0 +1,90 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grabr</title>
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="{% url 'index' %}" class="logo">Grabr</a>
+            
+            <div class="nav-links">
+                <a class="header-username" href="profile.html">Fonctionnalités</a> 
+                
+                <a class="header-username" href="profile.html">Comment ça marche</a>
+            </div>
+        
+            <a class="profile-icon-link-container" href="{% url 'login' %}">
+                <img src="{% static 'images/default.svg' %}" alt="User Image" >
+
+            </a>
+        </nav>
+       
+       
+        <div class="profile-icon"></div>
+    </header>
+    
+    <main>
+        <section class="banner">
+            <h1>Shop Anywhere, Travel Everywhere</h1>
+            <button>Commencez vos achats</button>
+            <button>En savoir plus</button>
+        </section>
+        
+        <section class="media-mentions">
+            <img src="forbes.png" alt="Forbes">
+            <img src="techcrunch.png" alt="TechCrunch">
+            <img src="yahoo.png" alt="Yahoo Finance">
+            <img src="bloomberg.png" alt="Bloomberg">
+            <img src="inc.png" alt="Inc">
+        </section>
+        
+        <section class="recent-orders">
+            <h2>Recently Completed Orders</h2>
+            <!-- Orders will go here -->
+        </section>
+        
+        <section class="how-it-works" id="how-it-works">
+            <h2>Comment ça marche</h2>
+            <ol>
+                <li>Créer une commande</li>
+                <li>Attendre les offres des voyageurs</li>
+                <li>Négocier la récompense</li>
+                <li>Recevoir votre article</li>
+            </ol>
+        </section>
+        
+        <section class="testimonials">
+            <h2>Nos utilisateurs adorent Grabr</h2>
+            <!-- Testimonials will go here -->
+        </section>
+        
+        <section class="quality-service">
+            <h2>Nous nous engageons à fournir des services de qualité</h2>
+            <div>Sécuriser les paiements en ligne</div>
+            <div>Livraison garantie</div>
+            <div>Options de paiement multiples</div>
+            <div>Aucun frais cachés</div>
+            <div>Communauté d'acheteurs et de voyageurs vérifiés</div>
+            <div>Service client 24/7</div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="social-media-links">
+            <!-- Social media links will go here -->
+        </div>
+        <div class="contact-info">
+            <!-- Contact information will go here -->
+        </div>
+        <div class="payment-methods">
+            <!-- Payment methods will go here -->
+        </div>
+    </footer>
+</body>
+</html>

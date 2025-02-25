@@ -1,0 +1,120 @@
+*, body {
+    margin: 0;
+    padding: 0;
+    font-family: Nunito;
+}
+
+body {
+    background-color: #EFEFEF;
+}
+
+header {
+    background-color: #444444;
+    height: 5em;
+    display: flex;
+    align-items: center;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    margin: auto 7%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* Conteneur des liens */
+.nav-links {
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    gap: 30px; /* Ajoute un espace entre les liens */
+}
+
+/* Style des liens */
+.nav-links a {
+    color: white;
+    font-size: 1.1em;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: rgb(1, 251, 255);;
+}
+.logo {
+    color: white;
+    font-size: 2em;
+    font-weight: semi-bold;
+    text-decoration: none;
+}
+
+.logo:hover {
+    color: rgb(1, 251, 255);
+}
+
+.profile-icon-link-container {
+    display: flex;
+    align-items: center;
+    margin: auto 0;
+}
+
+
+.profile-icon-link-container img {
+    margin: auto .3em auto auto;
+    width: 2.5em;
+}
+
+.profile-icon-link-container span {
+    margin: auto 0 .3em auto ;
+    text-decoration: none;
+    color: white;
+    font-size: 1.1em;
+}
+
+a {
+    text-decoration: none;
+}
+
+.banner {
+    text-align: center;
+    padding: 2rem;
+    background-image: url('banner-image.jpg');
+    background-size: cover;
+    color: rgb(255, 255, 255);
+}
+
+.banner h1 {
+    font-size: 2rem;
+    color: rgb(169, 211, 221);
+}
+
+.banner button {
+    margin: 1rem;
+    padding: 1rem 2rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.media-mentions img {
+    width: 100px;
+    margin: 1rem;
+}
+
+.recent-orders,
+.how-it-works,
+.testimonials,
+.quality-service {
+    padding: 2rem;
+    text-align: center;
+}
+
+footer {
+    padding: 1rem;
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
