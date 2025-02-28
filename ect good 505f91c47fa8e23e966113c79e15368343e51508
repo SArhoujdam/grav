@@ -1,0 +1,108 @@
+[33mcommit ade4753e9409ee8d4293091be260b4d7db85eeb5[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: slimane Arhoujdam <166454033+SArhoujdam@users.noreply.github.com>
+Date:   Thu Feb 27 22:43:08 2025 +0000
+
+    Mise à jour du fichier pyproject.toml
+
+[33mcommit c8f9cc58420c77171334c6caff1a8c70f6412f8f[m
+Author: slimane Arhoujdam <166454033+SArhoujdam@users.noreply.github.com>
+Date:   Wed Feb 26 19:50:21 2025 +0000
+
+    Suppression de requirements.txt
+
+[33mcommit 505f91c47fa8e23e966113c79e15368343e51508[m
+Author: slimane Arhoujdam <166454033+SArhoujdam@users.noreply.github.com>
+Date:   Wed Feb 26 18:58:29 2025 +0000
+
+    Modification pyproject.toml
+
+[33mcommit cce891009e6bd7764c35e3c07953619e16a9f0a0[m
+Author: slimane Arhoujdam <166454033+SArhoujdam@users.noreply.github.com>
+Date:   Wed Feb 26 10:16:16 2025 +0000
+
+    Modification du footer
+
+[33mcommit 32ba350f8e473d721f97c5cd6f696f9d694ffd29[m
+Author: slimane Arhoujdam <166454033+SArhoujdam@users.noreply.github.com>
+Date:   Tue Feb 25 20:56:02 2025 +0000
+
+    Create SECURITY.md
+
+[33mcommit 7ed15b1aa31df2a5559e69b1b7b17f8181b7ecbf[m
+Author: slimane Arhoujdam <166454033+SArhoujdam@users.noreply.github.com>
+Date:   Tue Feb 25 20:55:24 2025 +0000
+
+    Create django.yml
+
+[33mcommit e2e70e3edd729b5e86cbb8e8f5bc90039177918e[m
+Author: slimane Arhoujdam <166454033+SArhoujdam@users.noreply.github.com>
+Date:   Tue Feb 25 19:34:49 2025 +0000
+
+    Update pyproject.toml
+
+[33mcommit 1d04e738a9ac92cb892ad5f9d5cfe70e79e95a6a[m
+Author: slimane Arhoujdam <166454033+SArhoujdam@users.noreply.github.com>
+Date:   Tue Feb 25 19:29:33 2025 +0000
+
+    Resolve merge conflict in pyproject.toml
+
+[33mcommit a3fa52bff90815e9885f94aaf2270116378e235a[m
+Author: slimane Arhoujdam <166454033+SArhoujdam@users.noreply.github.com>
+Date:   Tue Feb 25 19:28:06 2025 +0000
+
+    Resolve merge conflict in pyproject.toml
+
+[33mcommit 9eabae9fb879ed6603b9f769538f5516a5f63bee[m
+Merge: 051b429 b30c7bd
+Author: slimane Arhoujdam <166454033+SArhoujdam@users.noreply.github.com>
+Date:   Tue Feb 25 18:27:41 2025 +0000
+
+    Fix merge conflict in pyproject.toml
+
+[33mcommit 051b429e9dde12cb2e07bbe90799d438b461c990[m
+Author: Arhoujdam <sarhoujdam@gmail.com>
+Date:   Tue Feb 25 18:20:47 2025 +0000
+
+    Update pyproject.toml with pillow and django dependencies
+
+[33mcommit b30c7bd1d8166da77ddf0437ebef610dcb404b27[m
+Author: slimane Arhoujdam <166454033+SArhoujdam@users.noreply.github.com>
+Date:   Tue Feb 25 18:11:20 2025 +0000
+
+    Update pyproject.toml
+
+[33mcommit 4947a22a263449a4bb3b62103cf2623d23df8278[m
+Author: slimane Arhoujdam <166454033+SArhoujdam@users.noreply.github.com>
+Date:   Tue Feb 25 18:06:36 2025 +0000
+
+    Update pyproject.toml
+
+[33mcommit cd1f79f39c9e11260e71acf79aadf76bdf0264f7[m
+Author: Arhoujdam <sarhoujdam@gmail.com>
+Date:   Tue Feb 25 17:41:30 2025 +0000
+
+    Ajout de poetry.lock et pyproject.toml
+
+[33mcommit 55362adb3e530311bd4de9bb4d843474cab85380[m
+Author: Arhoujdam <sarhoujdam@gmail.com>
+Date:   Tue Feb 25 17:11:20 2025 +0000
+
+    Add requirements.txt
+
+[33mcommit 785b09a5c906a73414534680a99dc82a9e7353a1[m
+Author: Arhoujdam <sarhoujdam@gmail.com>
+Date:   Tue Feb 25 16:41:28 2025 +0000
+
+    Initial commit with README
+
+[33mcommit 0f8a2653c109ecdf0b8a76e9c3bafd64961f14b2[m
+Author: Arhoujdam <sarhoujdam@gmail.com>
+Date:   Tue Feb 25 16:15:13 2025 +0000
+
+    first commit
+
+[33mcommit bcad4cbb860a2328f277511e7ee4975714be837e[m
+Author: Arhoujdam <sarhoujdam@gmail.com>
+Date:   Tue Feb 25 16:11:12 2025 +0000
+
+    initial commit
