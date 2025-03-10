@@ -1,0 +1,6 @@
+python
+django
+pillow
+gunicorn
+psycopg2
+poetry-plugin-export
